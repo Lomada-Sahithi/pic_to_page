@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: 'Merriweather', static;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+ background-color: #f9eade;
+  background-position:center;
+  background-size: contain;
+  position: relative;
+}
+.sitename{
+  font-size:25px;
+  font-weight:bold;
+  color:#fff;
+  text-align:center;
+
+
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width:190px;
+}
+.nav-links{
+  flex:1;
+  text-align:left;
+}
+.nav-links ul li{
+  list-style:none;
+  display: inline-block;
+  padding:  8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #130404;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #DBAAAC;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.nav-links2{
+  flex:1;
+  text-align:right;
+}
+.nav-links2 img{
+    width:100%;
+    height:15px;
+}
+.nav-links2 ul li{
+  list-style:none;
+  display: inline-block;
+  padding:  8px 12px;
+  position: relative;
+}
+.nav-links2 ul li a{
+  color: #0a0404;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-links2 ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #DBAAAC;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links2 ul li:hover::after{
+  width:100%;
+}
+nav .fa-solid{
+  display:none;
+}
+.nav-linksc{
+  flex:1;
+  text-align:center;
+}
+.nav-linksc ul li{
+  list-style:none;
+  display: inline-block;
+  padding:  8px 12px;
+  position: relative;
+}
+.nav-linksc ul li a{
+  color: #130404;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-linksc .zyloss{
+    font-size: 100px;
+    display: flex;
+    align-items: left;
+}
+@media(max-width: 700px){
+  .header{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box h1{
+    font: size 20px;
+  }
+  .nav-links ul li{
+    display:block;
+  }
+  .nav-links ul li a{
+    color: #fff3f3;
+  }
+  .nav-links{
+    position: absolute;
+    background: #b38486;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition:1s;
+  }
+  nav .fa-solid{
+    display: block;
+    color: #fff3f3;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 13px;
+  }
+  
+}
+
+
+
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+
+.btn{
+  margin-top:2rem;
+  text-decoration:None;
+  display:inline-block;
+  padding: 5px 10px;
+  font-size:20px;
+  border-radius:.5rem;
+  cursor:pointer;
+  background:rgb(242, 242, 242);
+  color:#a14545;
+  border-color:#a14545;
+  border:10px;
+}
+
+.btn:hover{
+  background-color:rgb(255, 255, 255);
+  color:#b34f4f;
+  border-color:#a14545;
+  border:10px;
+
+}
+
+
+.product .product-slider{
+  padding:5rem;
+  padding-top:100px;
+}
+.product .product-slider:first-child{
+  margin-bottom:2rem;
+}
+
+
+.product .product-slider .box{
+  background-color: #f9eade;
+    border-radius:20px;
+    text-align:center;
+    padding:1.5rem;
+    outline: .1rem solid rgba(150,150,150);
+    outline-offset:-1rem;
+    text-align:center;
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: .2s linear;
+    align-items: right;
+  
+
+}
+.product .product-slider .box:hover{
+  outline-offset:0rem;
+  outline: .1rem solid rgba(171, 75, 54, 0.5);
+
+
+}
+
+.product .product-slider .box img{
+  height:12rem;
+  width:9rem;
+}
+.product .product-slider .box h3{
+  font-size:20px;
+    color:rgb(50, 50, 50);
+
+}
+
+.product .product-slider .box .price{
+  font-size:20px;
+
+}
+
+.product .product-slider .wrapper {
+    font-size:20px;
+    grid-template-rows: 1f;
+    text-decoration:none;
+    display:flex;
+    justify-content:left;
+}
+
+
+.wrapper{
+  display:flex;
+  justify-content: space-around;
+  grid-template-rows:1fr;
+  gap:1rem;
+}
+.sort .a{
+    font-size:20px;
+    grid-template-rows: 1f;
+    text-decoration:none;
+    display:flex;
+    justify-content:left;
+    color: black;
+}
